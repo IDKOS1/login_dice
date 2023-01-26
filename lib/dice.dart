@@ -18,18 +18,18 @@ class _DiceState extends State<Dice> {
       backgroundColor: Colors.redAccent,
       appBar: AppBar(
         backgroundColor: Colors.redAccent,
-        title: Text('Dice Game'),
+        title: const Text('Dice Game'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget> [
             Padding(
-              padding: EdgeInsets.all(32.0),
+              padding: const EdgeInsets.all(32.0),
               child: Row(
                 children: <Widget> [
                   Expanded(child: Image.asset('image/dice$leftDice.png')),
-                  SizedBox(width: 20.0,),
+                  const SizedBox(width: 20.0,),
                   Expanded(child: Image.asset('image/dice$rightDice.png'))
                 ],
               ),
@@ -40,7 +40,7 @@ class _DiceState extends State<Dice> {
               height: 60.0,
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.orangeAccent
+                    backgroundColor: Colors.orangeAccent
                 ),
                 child: const Icon(
                    Icons.play_arrow,
