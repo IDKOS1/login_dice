@@ -28,16 +28,16 @@ class _LogInState extends State<LogIn> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Log in'),
+        title: const Text('Log in'),
         backgroundColor: Colors.redAccent,
         centerTitle: true,
         leading: IconButton(
-            icon: Icon(Icons.menu),
+            icon: const Icon(Icons.menu),
             onPressed: (){}
         ),
         actions: <Widget>[
           IconButton(
-              icon: Icon(Icons.search),
+              icon: const Icon(Icons.search),
               onPressed: (){}
           )
         ],
@@ -51,7 +51,7 @@ class _LogInState extends State<LogIn> {
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
-                  Padding(padding: EdgeInsets.only(top: 50)),
+                  const Padding(padding: EdgeInsets.only(top: 50)),
                   Center(
                     child: Image(
                         image: AssetImage('image/chef.gif'),
